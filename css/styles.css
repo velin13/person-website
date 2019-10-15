@@ -1,6 +1,8 @@
 body, html { 
     font-family: 'Montserrat', sans-serif;
     height: 100%;
+    width: 100%;
+    overflow-x: hidden;
     background-color: #3d3a3a;
     color: white;
     margin: 0;
@@ -35,8 +37,11 @@ body, html {
 }
 
 #nav-bar li a:hover { 
-    text-decoration: underline;
-    text-decoration-color:white;
+    background-color: #554f4f7c;
+    border-color: #554f4f7c;
+    border-width: 1px;
+    border-radius: 3px;
+    transition: .5s;
 }
 #nav { 
     text-align: center;
@@ -54,6 +59,7 @@ body, html {
     position: relative;
     display: inline-block;
     text-align: center;
+    padding: 5%;
 }
 .sticky {
     position: fixed;
@@ -85,7 +91,7 @@ body, html {
     font-family: 'Montserrat';
     color: white;
     position: sticky;
-    margin: 1% 30% 1% 30%;
+    margin: 1% 25% 1% 25%;
 }
 #resume { 
     background-color: #c0af6c;
@@ -111,3 +117,49 @@ th {
  .small { 
      font-size: 12px;
  }
+
+.left-bullet { 
+    text-align: left;
+    list-style-type: none;
+    padding: 0% 10% 1% 10%;
+}
+
+#portfolio .body-style { 
+    color: #c0af6c
+}
+
+@media only screen and (max-width: 600px) {
+    #nav-bar { 
+        display: table-caption;
+        padding: 1%;
+    }
+
+    .big-title { 
+        font-size: 24px;
+    }
+    .front-image { 
+        background-position: center;
+    }
+    .front-image .sub-title{
+        font-size: 10px; 
+        
+    }
+    .sub-title { 
+        font-size: 24px;
+    }
+    .body-style { 
+        font-size: 12px;
+        margin: 1% 8%;
+    }
+    #resume table { 
+        font-size: 10px;
+    }
+    #resume th { 
+        padding-left: 1%;
+    }
+
+    #resume .small { 
+        font-size: 9px;
+    }
+
+}
