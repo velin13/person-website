@@ -141,7 +141,6 @@
                 <div class="container">
                     <h1 class="sub-title">Contact Me</h1>
                     <p class="body-style">
-                        . . . <br><br>
                         velin@ucsd.edu <br> 626-221-7992 <br><br>
                         . . . <br><br>
                     </p>
@@ -150,13 +149,16 @@
         <script>
                 window.onscroll = function() {makeSticky()};
                 
-                var navbar = document.getElementById("nav-bar");
+                var navbar = document.getElementById("nav");
                 var sticky = 300;
+
                 function makeSticky() {
                   if (window.pageYOffset >= sticky) {
                     navbar.classList.add("sticky");
+                    console.log('sticky ys')
                   } else {
                     navbar.classList.remove("sticky");
+                    console.log('no')
                   }
                 }
                 </script>
